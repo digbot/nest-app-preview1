@@ -14,7 +14,7 @@ export class DmoduleModule {
         DmoduleModule,
         LoggerService,
       ],
-      exports: [DmoduleModule, LoggerService],
+      exports: [LoggerService],
     };
   }
 }
