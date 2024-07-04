@@ -5,6 +5,10 @@ import { DmoduleModule } from '../dmodule/dmodule.module';
 
 @Module({
   imports: [
+    // AT run-time, we'll need to first bind the options object to the Nest IoC container, 
+    // and then have Nest inject it into our DmoduleModule
+
+
     DmoduleModule.register({
       prefix: '_DYNAMIC_CONFIG_PREFIX_',
     }),

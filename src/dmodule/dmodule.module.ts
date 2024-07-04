@@ -4,6 +4,8 @@ import { LoggerService } from './logger.service';
 @Module({})
 export class DmoduleModule {
   static register(options: Record<string, any>): DynamicModule {
+    // AT run-time, we'll need to first bind the options object to the Nest IoC container, 
+    // and then have Nest inject it into our DmoduleModule
     return {
       module: DmoduleModule,
       providers: [
