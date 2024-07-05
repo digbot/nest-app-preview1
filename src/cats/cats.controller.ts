@@ -25,5 +25,5 @@ export class CatsController {
       return 'You found Garfield! Congratulations! 🎉';
     }
     return `Meow! Here's ${name}, your cute cat.`;
-  }
+  }s
 }
