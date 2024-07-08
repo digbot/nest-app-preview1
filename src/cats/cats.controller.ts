@@ -18,8 +18,8 @@ import { Request, Response } from 'express';
 import { CustomUploadFileTypeValidator } from '../app.validators';
 
 const MAX_PROFILE_PICTURE_SIZE_IN_BYTES = 2 * 1024 * 1024;
-//const VALID_UPLOADS_MIME_TYPES = ['image/jpeg', 'image/png'];
-const VALID_UPLOADS_MIME_TYPES = [];
+const VALID_UPLOADS_MIME_TYPES = ['image/jpeg', 'image/png'];
+//const VALID_UPLOADS_MIME_TYPES = [];
 
 
 @Controller('cats')
